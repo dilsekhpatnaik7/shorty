@@ -21,7 +21,7 @@ const UrlShortener: React.FC = () => {
       setShortUrl(response.data.shortUrl);
       setError('');
     } catch (error: any) {
-      setError('Failed to shorten URL. Please try again.', error);
+      setError('Failed to shorten URL.');
     }
   };
 
