@@ -15,7 +15,7 @@ const UrlShortener: React.FC = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/shorten', {
+      const response = await axios.post('https://shorty-backend-nine.vercel.app/shorten', {
         originalUrl,
       });
       setShortUrl(response.data.shortUrl);
